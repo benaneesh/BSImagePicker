@@ -23,8 +23,8 @@
 #import <AssetsLibrary/AssetsLibrary.h>
 #import "BSPhotoCollectionViewCellFactory.h"
 #import "BSPhotoCell.h"
-#import "BSVideoCell.h"
 #import "BSImagePickerSettings.h"
+#import "BSImagePicker-Swift.h"
 
 static NSString *kPhotoCellIdentifier =             @"photoCellIdentifier";
 static NSString *kVideoCellIdentifier =             @"videoCellIdentifier";
@@ -33,7 +33,7 @@ static NSString *kVideoCellIdentifier =             @"videoCellIdentifier";
 
 + (void)registerCellIdentifiersForCollectionView:(UICollectionView *)aCollectionView {
     [aCollectionView registerClass:[BSPhotoCell class] forCellWithReuseIdentifier:kPhotoCellIdentifier];
-    [aCollectionView registerClass:[BSVideoCell class] forCellWithReuseIdentifier:kVideoCellIdentifier];
+    [aCollectionView registerClass:[VideoCell class] forCellWithReuseIdentifier:kVideoCellIdentifier];
 }
 
 + (CGSize)sizeAtIndexPath:(NSIndexPath *)anIndexPath forCollectionView:(UICollectionView *)aCollectionView withModel:(id<BSItemsModel>)aModel {
@@ -81,7 +81,7 @@ static NSString *kVideoCellIdentifier =             @"videoCellIdentifier";
             NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
             [formatter setDateFormat:@"mm:ss"];
             
-            [[(BSVideoCell *)photoCell durationLabel] setText:[formatter stringFromDate:[NSDate dateWithTimeIntervalSince1970:[[asset valueForProperty:ALAssetPropertyDuration] doubleValue]]]];
+            [[(VideoCell *)photoCell durationLabel] setText:[formatter stringFromDate:[NSDate dateWithTimeIntervalSince1970:[[asset valueForProperty:ALAssetPropertyDuration] doubleValue]]]];
         }
     } else {
         photoCell = [aCollectionView dequeueReusableCellWithReuseIdentifier:kPhotoCellIdentifier forIndexPath:anIndexPath];

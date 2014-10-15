@@ -21,6 +21,8 @@
 // SOFTWARE.
 //
 
+#import <UIKit/UIKit.h>
+
 @interface BSNumberedSelectionView : UIView
 
 @property (assign, nonatomic) NSUInteger pictureNumber;

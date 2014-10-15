@@ -23,6 +23,7 @@
 		55A11EE718FE75B300F28CA5 /* ALAsset+BSEqual.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A11EE618FE75B300F28CA5 /* ALAsset+BSEqual.m */; };
 		55A4258918FA8E6F00EF7E8F /* BSImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A4258818FA8E6F00EF7E8F /* BSImagePickerController.m */; };
 		55A79F6919EECFC1003E7E86 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A79F6819EECFC1003E7E86 /* CameraView.swift */; };
+		55A79F6B19EED3CD003E7E86 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A79F6A19EED3CD003E7E86 /* VideoCell.swift */; };
 		55C3BE6518EF632D00E601DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C3BE6418EF632D00E601DE /* Foundation.framework */; };
 		55C3BE6718EF632D00E601DE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C3BE6618EF632D00E601DE /* CoreGraphics.framework */; };
 		55C3BE6918EF632D00E601DE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C3BE6818EF632D00E601DE /* UIKit.framework */; };
@@ -32,7 +33,6 @@
 		55C3BE7718EF632D00E601DE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55C3BE7618EF632D00E601DE /* Images.xcassets */; };
 		55E9AFEE1964B62A000B4699 /* BSTableController+BSItemsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E9AFED1964B62A000B4699 /* BSTableController+BSItemsModel.m */; };
 		55E9AFF11964B6B4000B4699 /* BSTableController+UITableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E9AFF01964B6B4000B4699 /* BSTableController+UITableView.m */; };
-		55E9AFF41964C470000B4699 /* BSVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E9AFF31964C470000B4699 /* BSVideoCell.m */; };
 		55EC234518F1DB6A008F5A02 /* BSSpeechBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 55EC234418F1DB6A008F5A02 /* BSSpeechBubbleView.m */; };
 		55EC235118F2F873008F5A02 /* BSTriangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 55EC235018F2F873008F5A02 /* BSTriangleView.m */; };
 		BB2B90909814568BB3997E1A /* BSShrinkAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2B99BEDF8860AD297EE80D /* BSShrinkAnimator.m */; };
@@ -84,6 +84,7 @@
 		55A4258718FA8E6F00EF7E8F /* BSImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSImagePickerController.h; sourceTree = "<group>"; };
 		55A4258818FA8E6F00EF7E8F /* BSImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSImagePickerController.m; sourceTree = "<group>"; };
 		55A79F6819EECFC1003E7E86 /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		55A79F6A19EED3CD003E7E86 /* VideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 		55C3BE6118EF632D00E601DE /* BSImagePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BSImagePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55C3BE6418EF632D00E601DE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		55C3BE6618EF632D00E601DE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -101,8 +102,6 @@
 		55E9AFED1964B62A000B4699 /* BSTableController+BSItemsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BSTableController+BSItemsModel.m"; sourceTree = "<group>"; };
 		55E9AFEF1964B6B4000B4699 /* BSTableController+UITableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BSTableController+UITableView.h"; sourceTree = "<group>"; };
 		55E9AFF01964B6B4000B4699 /* BSTableController+UITableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BSTableController+UITableView.m"; sourceTree = "<group>"; };
-		55E9AFF21964C470000B4699 /* BSVideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSVideoCell.h; sourceTree = "<group>"; };
-		55E9AFF31964C470000B4699 /* BSVideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSVideoCell.m; sourceTree = "<group>"; };
 		55EC234118F0A321008F5A02 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		55EC234318F1DB6A008F5A02 /* BSSpeechBubbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSSpeechBubbleView.h; sourceTree = "<group>"; };
 		55EC234418F1DB6A008F5A02 /* BSSpeechBubbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSSpeechBubbleView.m; sourceTree = "<group>"; };
@@ -324,11 +323,10 @@
 				558315E818F8436E00B54FE6 /* BSPhotoCell.m */,
 				55A11ED518FC440D00F28CA5 /* BSNumberedSelectionView.h */,
 				55A11ED618FC440D00F28CA5 /* BSNumberedSelectionView.m */,
-				55E9AFF21964C470000B4699 /* BSVideoCell.h */,
-				55E9AFF31964C470000B4699 /* BSVideoCell.m */,
 				557B12EB19ED8C1600C7ED02 /* AlbumCell.swift */,
 				557B12EA19ED8C1600C7ED02 /* BSImagePicker-Bridging-Header.h */,
 				55A79F6819EECFC1003E7E86 /* CameraView.swift */,
+				55A79F6A19EED3CD003E7E86 /* VideoCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -486,7 +484,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				55C3BE7118EF632D00E601DE /* main.m in Sources */,
-				55E9AFF41964C470000B4699 /* BSVideoCell.m in Sources */,
 				559829841931625B00D68BD5 /* BSImagePickerSettings.m in Sources */,
 				55A4258918FA8E6F00EF7E8F /* BSImagePickerController.m in Sources */,
 				5509A42919301069006E4DA1 /* BSPhotoCollectionViewCellFactory.m in Sources */,
@@ -510,6 +507,7 @@
 				BB2B929FDF16F341870E5B2A /* BSPreviewController.m in Sources */,
 				BB2B93DC4B697E92438D302A /* BSCollectionController+UICollectionView.m in Sources */,
 				BB2B9726523A57B047F419A1 /* BSPhotosController+BSItemsModel.m in Sources */,
+				55A79F6B19EED3CD003E7E86 /* VideoCell.swift in Sources */,
 				BB2B9DCAF191075A0904954F /* BSCollectionController+BSItemsModel.m in Sources */,
 				BB2B94F80589BF941548F2B6 /* BSExpandAnimator.m in Sources */,
 				BB2B90909814568BB3997E1A /* BSShrinkAnimator.m in Sources */,

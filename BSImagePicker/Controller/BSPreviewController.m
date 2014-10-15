@@ -25,7 +25,7 @@
 #import "BSNumberedSelectionView.h"
 #import <AssetsLibrary/AssetsLibrary.h>
 #import <MediaPlayer/MediaPlayer.h>
-#import "BSVideoCell.h"
+#import "BSImagePicker-Swift.h"
 
 @interface BSPreviewController ()
 
@@ -226,7 +226,7 @@
     ALAsset *asset = [self.collectionModel itemAtIndexPath:anIndexPath];
     
     if([[asset valueForProperty:ALAssetPropertyType] isEqualToString:ALAssetTypeVideo]) {
-        BSVideoCell *cell = (BSVideoCell *)[self.collectionView cellForItemAtIndexPath:anIndexPath];
+        VideoCell *cell = (VideoCell *)[self.collectionView cellForItemAtIndexPath:anIndexPath];
         [self.moviePlayerController setContentURL:asset.defaultRepresentation.url];
         [self.moviePlayerController.view setFrame:cell.imageView.bounds];
         [self.moviePlayerController prepareToPlay];
@@ -237,7 +237,7 @@
 
 - (void)playAction:(id)sender {
     //Get Cell to play it in
-    BSVideoCell *cell = (BSVideoCell *)[self.collectionView cellForItemAtIndexPath:self.currentIndexPath];
+    VideoCell *cell = (VideoCell *)[self.collectionView cellForItemAtIndexPath:self.currentIndexPath];
     
     //Listen for notifications
     [[NSNotificationCenter defaultCenter] addObserver:self
