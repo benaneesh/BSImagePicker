@@ -22,11 +22,11 @@
 //
 
 #import "BSVideoCell.h"
-#import "BSCameraView.h"
+#import "BSImagePicker-Swift.h"
 
 @interface BSVideoCell ()
 
-@property (nonatomic, strong) BSCameraView *cameraView;
+@property (nonatomic, strong) CameraView *cameraView;
 
 @end
 
@@ -70,9 +70,9 @@
     return _durationLabel;
 }
 
-- (BSCameraView *)cameraView {
+- (CameraView *)cameraView {
     if(!_cameraView) {
-        _cameraView = [[BSCameraView alloc] initWithFrame:CGRectMake(5, 2, 40, 10)];
+        _cameraView = [[CameraView alloc] initWithFrame:CGRectMake(5, 2, 40, 10)];
         [_cameraView setBackgroundColor:[UIColor clearColor]];
         [_cameraView setColor:[UIColor whiteColor]];
     }

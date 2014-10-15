@@ -75,7 +75,7 @@ static NSString *kVideoCellIdentifier =             @"videoCellIdentifier";
     
     //Deque correct type of cell for the asset
     BSPhotoCell *photoCell = nil;
-    if([[asset valueForProperty:ALAssetPropertyType] isEqual:ALAssetTypeVideo]) {
+    if(![[asset valueForProperty:ALAssetPropertyType] isEqual:ALAssetTypeVideo]) {
         photoCell = [aCollectionView dequeueReusableCellWithReuseIdentifier:kVideoCellIdentifier forIndexPath:anIndexPath];
         if([asset valueForProperty:ALAssetPropertyDuration] != ALErrorInvalidProperty) {
             NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
