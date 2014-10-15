@@ -22,7 +22,6 @@
 
 #import "BSPreviewController.h"
 #import "BSPreviewCollectionViewCellFactory.h"
-#import "BSNumberedSelectionView.h"
 #import <AssetsLibrary/AssetsLibrary.h>
 #import <MediaPlayer/MediaPlayer.h>
 #import "BSImagePicker-Swift.h"
@@ -34,7 +33,7 @@
 @property (nonatomic, strong) UIBarButtonItem *flexibleItem;
 @property (nonatomic, strong) UIToolbar *toolbar;
 @property (nonatomic, strong) MPMoviePlayerController *moviePlayerController;
-@property (nonatomic, strong) BSNumberedSelectionView *checkmarkView;
+@property (nonatomic, strong) NumberedSelectionView *checkmarkView;
 
 - (void)togglePlayButtonForIndexPath:(NSIndexPath *)anIndexPath;
 - (void)prepareMoviePlayerForIndexPath:(NSIndexPath *)anIndexPath;
@@ -121,9 +120,9 @@
     return _checkMarkButton;
 }
 
-- (BSNumberedSelectionView *)checkmarkView {
+- (NumberedSelectionView *)checkmarkView {
     if(!_checkmarkView) {
-        _checkmarkView = [[BSNumberedSelectionView alloc] initWithFrame:CGRectMake(0, 0, 25, 25)];
+        _checkmarkView = [[NumberedSelectionView alloc] initWithFrame:CGRectMake(0, 0, 25, 25)];
         [_checkmarkView setBackgroundColor:[UIColor clearColor]];
     }
     

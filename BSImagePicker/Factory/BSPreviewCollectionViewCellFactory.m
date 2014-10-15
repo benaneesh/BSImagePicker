@@ -23,6 +23,7 @@
 #import "BSPreviewCollectionViewCellFactory.h"
 #import "BSPhotoCell.h"
 #import <AssetsLibrary/AssetsLibrary.h>
+#import "BSImagePicker-Swift.h"
 
 static NSString *kPhotoCellIdentifier =             @"previewCellIdentifier";
 

@@ -18,12 +18,12 @@
 		558315E918F8436E00B54FE6 /* BSPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 558315E818F8436E00B54FE6 /* BSPhotoCell.m */; };
 		5598296E1930ECDF00D68BD5 /* BSAssetsGroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5598296D1930ECDF00D68BD5 /* BSAssetsGroupModel.m */; };
 		559829841931625B00D68BD5 /* BSImagePickerSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 559829831931625B00D68BD5 /* BSImagePickerSettings.m */; };
-		55A11ED718FC440D00F28CA5 /* BSNumberedSelectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A11ED618FC440D00F28CA5 /* BSNumberedSelectionView.m */; };
 		55A11EE118FC952D00F28CA5 /* UIViewController+BSImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A11EE018FC952D00F28CA5 /* UIViewController+BSImagePicker.m */; };
 		55A11EE718FE75B300F28CA5 /* ALAsset+BSEqual.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A11EE618FE75B300F28CA5 /* ALAsset+BSEqual.m */; };
 		55A4258918FA8E6F00EF7E8F /* BSImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A4258818FA8E6F00EF7E8F /* BSImagePickerController.m */; };
 		55A79F6919EECFC1003E7E86 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A79F6819EECFC1003E7E86 /* CameraView.swift */; };
 		55A79F6B19EED3CD003E7E86 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A79F6A19EED3CD003E7E86 /* VideoCell.swift */; };
+		55A79F6D19EEE23D003E7E86 /* NumberedSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A79F6C19EEE23D003E7E86 /* NumberedSelectionView.swift */; };
 		55C3BE6518EF632D00E601DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C3BE6418EF632D00E601DE /* Foundation.framework */; };
 		55C3BE6718EF632D00E601DE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C3BE6618EF632D00E601DE /* CoreGraphics.framework */; };
 		55C3BE6918EF632D00E601DE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C3BE6818EF632D00E601DE /* UIKit.framework */; };
@@ -75,8 +75,6 @@
 		559829801931507700D68BD5 /* BSItemsModelDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSItemsModelDelegate.h; sourceTree = "<group>"; };
 		559829821931625B00D68BD5 /* BSImagePickerSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSImagePickerSettings.h; sourceTree = "<group>"; };
 		559829831931625B00D68BD5 /* BSImagePickerSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSImagePickerSettings.m; sourceTree = "<group>"; };
-		55A11ED518FC440D00F28CA5 /* BSNumberedSelectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSNumberedSelectionView.h; sourceTree = "<group>"; };
-		55A11ED618FC440D00F28CA5 /* BSNumberedSelectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSNumberedSelectionView.m; sourceTree = "<group>"; };
 		55A11EDF18FC952D00F28CA5 /* UIViewController+BSImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BSImagePicker.h"; sourceTree = "<group>"; };
 		55A11EE018FC952D00F28CA5 /* UIViewController+BSImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BSImagePicker.m"; sourceTree = "<group>"; };
 		55A11EE518FE75B300F28CA5 /* ALAsset+BSEqual.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALAsset+BSEqual.h"; sourceTree = "<group>"; };
@@ -85,6 +83,7 @@
 		55A4258818FA8E6F00EF7E8F /* BSImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSImagePickerController.m; sourceTree = "<group>"; };
 		55A79F6819EECFC1003E7E86 /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		55A79F6A19EED3CD003E7E86 /* VideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
+		55A79F6C19EEE23D003E7E86 /* NumberedSelectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberedSelectionView.swift; sourceTree = "<group>"; };
 		55C3BE6118EF632D00E601DE /* BSImagePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BSImagePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55C3BE6418EF632D00E601DE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		55C3BE6618EF632D00E601DE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -321,12 +320,11 @@
 				55EC235018F2F873008F5A02 /* BSTriangleView.m */,
 				558315E718F8436E00B54FE6 /* BSPhotoCell.h */,
 				558315E818F8436E00B54FE6 /* BSPhotoCell.m */,
-				55A11ED518FC440D00F28CA5 /* BSNumberedSelectionView.h */,
-				55A11ED618FC440D00F28CA5 /* BSNumberedSelectionView.m */,
 				557B12EB19ED8C1600C7ED02 /* AlbumCell.swift */,
 				557B12EA19ED8C1600C7ED02 /* BSImagePicker-Bridging-Header.h */,
 				55A79F6819EECFC1003E7E86 /* CameraView.swift */,
 				55A79F6A19EED3CD003E7E86 /* VideoCell.swift */,
+				55A79F6C19EEE23D003E7E86 /* NumberedSelectionView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -495,7 +493,6 @@
 				55A11EE718FE75B300F28CA5 /* ALAsset+BSEqual.m in Sources */,
 				5509A423192FA2FD006E4DA1 /* BSAlbumTableViewCellFactory.m in Sources */,
 				557BD8FF1962B607007A1C38 /* BSTableController.m in Sources */,
-				55A11ED718FC440D00F28CA5 /* BSNumberedSelectionView.m in Sources */,
 				5598296E1930ECDF00D68BD5 /* BSAssetsGroupModel.m in Sources */,
 				5509A41C192F9F4D006E4DA1 /* BSAssetModel.m in Sources */,
 				55EC234518F1DB6A008F5A02 /* BSSpeechBubbleView.m in Sources */,
@@ -514,6 +511,7 @@
 				55A79F6919EECFC1003E7E86 /* CameraView.swift in Sources */,
 				BB2B939921EFF103FA6E1864 /* BSPhotosController+PrivateMethods.m in Sources */,
 				BB2B92A3E94AD0C3BF3D42D4 /* BSPhotosController+UICollectionView.m in Sources */,
+				55A79F6D19EEE23D003E7E86 /* NumberedSelectionView.swift in Sources */,
 				55E9AFEE1964B62A000B4699 /* BSTableController+BSItemsModel.m in Sources */,
 				BB2B9A371C251850A91B9B5A /* BSPreviewController+UICollectionView.m in Sources */,
 			);

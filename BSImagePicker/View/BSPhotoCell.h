@@ -20,13 +20,14 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-#import "BSNumberedSelectionView.h"
+#import <UIKit/UIKit.h>
 
+@class NumberedSelectionView;
 @interface BSPhotoCell : UICollectionViewCell
 
 @property (nonatomic, strong) UIImageView *imageView;
 @property (nonatomic, strong) UIView *fadedCoverView;
-@property (nonatomic, strong) BSNumberedSelectionView *checkmarkView;
+@property (nonatomic, strong) NumberedSelectionView *checkmarkView;
 
 - (void)setPictureNumber:(NSUInteger)pictureNumber selected:(BOOL)selected animated:(BOOL)animated;
 

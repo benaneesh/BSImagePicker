@@ -21,6 +21,7 @@
 // SOFTWARE.
 
 #import "BSPhotoCell.h"
+#import "BSImagePicker-Swift.h"
 
 @interface BSPhotoCell ()
 
@@ -83,9 +84,9 @@
     return _fadedCoverView;
 }
 
-- (BSNumberedSelectionView *)checkmarkView {
+- (NumberedSelectionView *)checkmarkView {
     if(!_checkmarkView) {
-        _checkmarkView = [[BSNumberedSelectionView alloc] initWithFrame:CGRectMake(self.imageView.bounds.size.width-25, self.imageView.bounds.size.height-25, 25, 25)];
+        _checkmarkView = [[NumberedSelectionView alloc] initWithFrame:CGRectMake(self.imageView.bounds.size.width-25, self.imageView.bounds.size.height-25, 25, 25)];
 		_checkmarkView.contentMode = UIViewContentModeRedraw;
         [_checkmarkView setAutoresizingMask:UIViewAutoresizingFlexibleLeftMargin|UIViewAutoresizingFlexibleTopMargin];
         [_checkmarkView setBackgroundColor:[UIColor clearColor]];
