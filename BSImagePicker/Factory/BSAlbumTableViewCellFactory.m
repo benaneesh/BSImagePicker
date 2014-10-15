@@ -21,15 +21,15 @@
 // SOFTWARE.
 
 #import "BSAlbumTableViewCellFactory.h"
-#import "BSAlbumCell.h"
 #import <AssetsLibrary/AssetsLibrary.h>
+#import "BSImagePicker-Swift.h"
 
 static NSString *kAlbumCellIdentifier =             @"albumCellIdentifier";
 
 @implementation BSAlbumTableViewCellFactory
 
 + (void)registerCellIdentifiersForTableView:(UITableView *)aTableView {
-    [aTableView registerClass:[BSAlbumCell class] forCellReuseIdentifier:kAlbumCellIdentifier];
+    [aTableView registerClass:[AlbumCell class] forCellReuseIdentifier:kAlbumCellIdentifier];
 }
 
 + (CGFloat)heightAtIndexPath:(NSIndexPath *)anIndexPath forModel:(id<BSItemsModel>)aModel {
@@ -52,7 +52,7 @@ static NSString *kAlbumCellIdentifier =             @"albumCellIdentifier";
 }
 
 - (UITableViewCell *)cellAtIndexPath:(NSIndexPath *)anIndexPath forTableView:(UITableView *)aTableView withModel:(id<BSItemsModel>)aModel {
-    BSAlbumCell *albumCell = [aTableView dequeueReusableCellWithIdentifier:kAlbumCellIdentifier forIndexPath:anIndexPath];
+    AlbumCell *albumCell = [aTableView dequeueReusableCellWithIdentifier:kAlbumCellIdentifier forIndexPath:anIndexPath];
     ALAssetsGroup *assetsGroup = [aModel itemAtIndexPath:anIndexPath];
     
     if([assetsGroup isKindOfClass:[ALAssetsGroup class]]) {
