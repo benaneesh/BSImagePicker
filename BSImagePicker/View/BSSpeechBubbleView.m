@@ -21,11 +21,12 @@
 // SOFTWARE.
 
 #import "BSSpeechBubbleView.h"
-#import "BSTriangleView.h"
+#import "BSImagePicker-Swift.h"
 
 @interface BSSpeechBubbleView ()
 
-@property (nonatomic, strong) BSTriangleView *triangle;
+@property (nonatomic, strong) TriangleView *triangle;
+@property (nonatomic, assign) CGSize pointerSize;
 
 @end
 
@@ -34,7 +35,8 @@
 - (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        [self setContentView:[[UIToolbar alloc] initWithFrame:CGRectMake(self.frame.origin.x, self.frame.origin.y+self.triangle.pointerSize.height, round(self.frame.size.width), round(self.frame.size.height-self.triangle.pointerSize.height))]];
+        self.pointerSize = CGSizeMake(24, 7);
+        [self setContentView:[[UIToolbar alloc] initWithFrame:CGRectMake(self.frame.origin.x, self.frame.origin.y+self.pointerSize.height, round(self.frame.size.width), round(self.frame.size.height-self.pointerSize.height))]];
         [self.contentView setAutoresizingMask:UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleWidth];
         [self.contentView.layer setCornerRadius:4.0];
         [self.contentView setClipsToBounds:YES];
@@ -48,9 +50,9 @@
     return self;
 }
 
-- (BSTriangleView *)triangle {
+- (TriangleView *)triangle {
     if(!_triangle) {
-        _triangle = [[BSTriangleView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, 7) andPointerSize:CGSizeMake(24, 7)];
+        _triangle = [[TriangleView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, 7) pointerSize:self.pointerSize];
         [_triangle setAutoresizingMask:UIViewAutoresizingFlexibleLeftMargin|UIViewAutoresizingFlexibleRightMargin];
     }
     

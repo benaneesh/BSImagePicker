@@ -24,6 +24,7 @@
 		55A79F6B19EED3CD003E7E86 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A79F6A19EED3CD003E7E86 /* VideoCell.swift */; };
 		55A79F6D19EEE23D003E7E86 /* NumberedSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A79F6C19EEE23D003E7E86 /* NumberedSelectionView.swift */; };
 		55A79F6F19EEF0EF003E7E86 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A79F6E19EEF0EF003E7E86 /* PhotoCell.swift */; };
+		55A79F7119EEFB01003E7E86 /* TriangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A79F7019EEFB01003E7E86 /* TriangleView.swift */; };
 		55C3BE6518EF632D00E601DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C3BE6418EF632D00E601DE /* Foundation.framework */; };
 		55C3BE6718EF632D00E601DE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C3BE6618EF632D00E601DE /* CoreGraphics.framework */; };
 		55C3BE6918EF632D00E601DE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C3BE6818EF632D00E601DE /* UIKit.framework */; };
@@ -34,7 +35,6 @@
 		55E9AFEE1964B62A000B4699 /* BSTableController+BSItemsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E9AFED1964B62A000B4699 /* BSTableController+BSItemsModel.m */; };
 		55E9AFF11964B6B4000B4699 /* BSTableController+UITableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E9AFF01964B6B4000B4699 /* BSTableController+UITableView.m */; };
 		55EC234518F1DB6A008F5A02 /* BSSpeechBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 55EC234418F1DB6A008F5A02 /* BSSpeechBubbleView.m */; };
-		55EC235118F2F873008F5A02 /* BSTriangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 55EC235018F2F873008F5A02 /* BSTriangleView.m */; };
 		BB2B90909814568BB3997E1A /* BSShrinkAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2B99BEDF8860AD297EE80D /* BSShrinkAnimator.m */; };
 		BB2B929FDF16F341870E5B2A /* BSPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2B980BF19D6B2C0E05F297 /* BSPreviewController.m */; };
 		BB2B92A3E94AD0C3BF3D42D4 /* BSPhotosController+UICollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2B98E9E8546E358C4B1234 /* BSPhotosController+UICollectionView.m */; };
@@ -83,6 +83,7 @@
 		55A79F6A19EED3CD003E7E86 /* VideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 		55A79F6C19EEE23D003E7E86 /* NumberedSelectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberedSelectionView.swift; sourceTree = "<group>"; };
 		55A79F6E19EEF0EF003E7E86 /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		55A79F7019EEFB01003E7E86 /* TriangleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriangleView.swift; sourceTree = "<group>"; };
 		55C3BE6118EF632D00E601DE /* BSImagePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BSImagePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55C3BE6418EF632D00E601DE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		55C3BE6618EF632D00E601DE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -103,8 +104,6 @@
 		55EC234118F0A321008F5A02 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		55EC234318F1DB6A008F5A02 /* BSSpeechBubbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSSpeechBubbleView.h; sourceTree = "<group>"; };
 		55EC234418F1DB6A008F5A02 /* BSSpeechBubbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSSpeechBubbleView.m; sourceTree = "<group>"; };
-		55EC234F18F2F873008F5A02 /* BSTriangleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSTriangleView.h; sourceTree = "<group>"; };
-		55EC235018F2F873008F5A02 /* BSTriangleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSTriangleView.m; sourceTree = "<group>"; };
 		94459BC6DFE9F8F48647AAC7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		AADD7794030C33DAB1DA0972 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB2B9033028BA2F8F9C5F5BA /* BSPhotosController+PrivateMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BSPhotosController+PrivateMethods.h"; sourceTree = "<group>"; };
@@ -315,14 +314,13 @@
 			children = (
 				55EC234318F1DB6A008F5A02 /* BSSpeechBubbleView.h */,
 				55EC234418F1DB6A008F5A02 /* BSSpeechBubbleView.m */,
-				55EC234F18F2F873008F5A02 /* BSTriangleView.h */,
-				55EC235018F2F873008F5A02 /* BSTriangleView.m */,
 				557B12EB19ED8C1600C7ED02 /* AlbumCell.swift */,
 				557B12EA19ED8C1600C7ED02 /* BSImagePicker-Bridging-Header.h */,
 				55A79F6819EECFC1003E7E86 /* CameraView.swift */,
 				55A79F6A19EED3CD003E7E86 /* VideoCell.swift */,
 				55A79F6C19EEE23D003E7E86 /* NumberedSelectionView.swift */,
 				55A79F6E19EEF0EF003E7E86 /* PhotoCell.swift */,
+				55A79F7019EEFB01003E7E86 /* TriangleView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -485,6 +483,7 @@
 				5509A42919301069006E4DA1 /* BSPhotoCollectionViewCellFactory.m in Sources */,
 				55C3BE7518EF632D00E601DE /* BSAppDelegate.m in Sources */,
 				55A11EE118FC952D00F28CA5 /* UIViewController+BSImagePicker.m in Sources */,
+				55A79F7119EEFB01003E7E86 /* TriangleView.swift in Sources */,
 				55E9AFF11964B6B4000B4699 /* BSTableController+UITableView.m in Sources */,
 				5509A42D193010BC006E4DA1 /* BSPreviewCollectionViewCellFactory.m in Sources */,
 				55A11EE718FE75B300F28CA5 /* ALAsset+BSEqual.m in Sources */,
@@ -493,7 +492,6 @@
 				5598296E1930ECDF00D68BD5 /* BSAssetsGroupModel.m in Sources */,
 				5509A41C192F9F4D006E4DA1 /* BSAssetModel.m in Sources */,
 				55EC234518F1DB6A008F5A02 /* BSSpeechBubbleView.m in Sources */,
-				55EC235118F2F873008F5A02 /* BSTriangleView.m in Sources */,
 				BB2B992598FC83C26F7BCF0F /* ALAssetsGroup+Equal.m in Sources */,
 				557B12EC19ED8C1600C7ED02 /* AlbumCell.swift in Sources */,
 				BB2B9B4E9F4BC435FF833E97 /* BSPhotosController.m in Sources */,

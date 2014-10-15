@@ -20,34 +20,32 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-#import "BSTriangleView.h"
+import UIKit
 
-@implementation BSTriangleView
-
-- (id)initWithFrame:(CGRect)frame andPointerSize:(CGSize)pointerSize {
-    if (self = [super initWithFrame:frame]) {
+class TriangleView: UIToolbar {
+    init(frame: CGRect, pointerSize: CGSize) {
+        super.init(frame: frame)
+        
         //Need a color to make it appear...
-        [self setBackgroundColor:[UIColor blackColor]];
+        backgroundColor = UIColor.blackColor()
         
         // Create a mask layer and the frame to determine what will be visible in the view.
-        CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
-
-        UIBezierPath *path = [UIBezierPath bezierPath];
-        [path moveToPoint:CGPointMake( ceil((frame.size.width/2.0) - (pointerSize.width/2.0)), pointerSize.height)];
-        [path addLineToPoint:CGPointMake( ceil(frame.size.width / 2.0), 0)];
-        [path addLineToPoint:CGPointMake( ceil((frame.size.width/2.0) + (pointerSize.width/2.0)), pointerSize.height)];
-        [path closePath];
+        var maskLayer = CAShapeLayer()
+        
+        var path = UIBezierPath()
+        path.moveToPoint(CGPointMake( ceil((frame.size.width/2.0) - (pointerSize.width/2.0)), pointerSize.height))
+        path.addLineToPoint(CGPointMake( ceil(frame.size.width / 2.0), 0))
+        path.addLineToPoint(CGPointMake( ceil((frame.size.width/2.0) + (pointerSize.width/2.0)), pointerSize.height))
+        path.closePath()
         
         // Set the path to the mask layer.
-        [maskLayer setPath:path.CGPath];
+        maskLayer.path = path.CGPath
         
         // Set the mask of the view.
-        [self.layer setMask:maskLayer];
-        
-        [self setPointerSize:pointerSize];
+        self.layer.mask = maskLayer
     }
-    
-    return self;
-}
 
-@end
+    required init(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+}
