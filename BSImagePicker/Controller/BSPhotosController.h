@@ -22,17 +22,17 @@
 
 #import "BSCollectionController.h"
 #import "BSTableViewCellFactory.h"
-#import "BSSpeechBubbleView.h"
 #import "BSPreviewController.h"
 #import "BSShrinkAnimator.h"
 #import "BSExpandAnimator.h"
 #import "BSTableController.h"
+#import "BSImagePicker-Swift.h"
 
 @interface BSPhotosController : BSCollectionController
 
 @property (nonatomic, strong) BSTableController *tableController;
 
-@property (nonatomic, strong) BSSpeechBubbleView *speechBubbleView;
+@property (nonatomic, strong) SpeechBubbleView *speechBubbleView;
 @property (nonatomic, strong) UIView *coverView;
 
 @property (nonatomic, strong) UIBarButtonItem *cancelButton;

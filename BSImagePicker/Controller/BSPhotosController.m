@@ -148,9 +148,9 @@
     return _albumButton;
 }
 
-- (BSSpeechBubbleView *)speechBubbleView {
+- (SpeechBubbleView *)speechBubbleView {
     if(!_speechBubbleView) {
-        _speechBubbleView = [[BSSpeechBubbleView alloc] initWithFrame:CGRectMake(0, 0, 300, 320)];
+        _speechBubbleView = [[SpeechBubbleView alloc] initWithFrame:CGRectMake(0, 0, 300, 320)];
         [_speechBubbleView setAutoresizingMask:UIViewAutoresizingFlexibleLeftMargin|UIViewAutoresizingFlexibleRightMargin];
         [[_speechBubbleView contentView] addSubview:self.tableController.tableView];
     }

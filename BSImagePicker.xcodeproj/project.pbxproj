@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0879977EF00D2E2F8578B0B0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AADD7794030C33DAB1DA0972 /* libPods.a */; };
+		55066AAD19EF02C900D09790 /* SpeechBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55066AAC19EF02C900D09790 /* SpeechBubbleView.swift */; };
 		5509A41C192F9F4D006E4DA1 /* BSAssetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5509A41B192F9F4D006E4DA1 /* BSAssetModel.m */; };
 		5509A423192FA2FD006E4DA1 /* BSAlbumTableViewCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5509A422192FA2FD006E4DA1 /* BSAlbumTableViewCellFactory.m */; };
 		5509A42919301069006E4DA1 /* BSPhotoCollectionViewCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5509A42819301069006E4DA1 /* BSPhotoCollectionViewCellFactory.m */; };
@@ -34,7 +35,6 @@
 		55C3BE7718EF632D00E601DE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55C3BE7618EF632D00E601DE /* Images.xcassets */; };
 		55E9AFEE1964B62A000B4699 /* BSTableController+BSItemsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E9AFED1964B62A000B4699 /* BSTableController+BSItemsModel.m */; };
 		55E9AFF11964B6B4000B4699 /* BSTableController+UITableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E9AFF01964B6B4000B4699 /* BSTableController+UITableView.m */; };
-		55EC234518F1DB6A008F5A02 /* BSSpeechBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 55EC234418F1DB6A008F5A02 /* BSSpeechBubbleView.m */; };
 		BB2B90909814568BB3997E1A /* BSShrinkAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2B99BEDF8860AD297EE80D /* BSShrinkAnimator.m */; };
 		BB2B929FDF16F341870E5B2A /* BSPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2B980BF19D6B2C0E05F297 /* BSPreviewController.m */; };
 		BB2B92A3E94AD0C3BF3D42D4 /* BSPhotosController+UICollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2B98E9E8546E358C4B1234 /* BSPhotosController+UICollectionView.m */; };
@@ -51,6 +51,7 @@
 
 /* Begin PBXFileReference section */
 		01822671BD2FB33E04CAE7E9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		55066AAC19EF02C900D09790 /* SpeechBubbleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechBubbleView.swift; sourceTree = "<group>"; };
 		5509A411192F9B08006E4DA1 /* BSItemsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSItemsModel.h; sourceTree = "<group>"; };
 		5509A412192F9B27006E4DA1 /* BSTableViewCellFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSTableViewCellFactory.h; sourceTree = "<group>"; };
 		5509A413192F9C18006E4DA1 /* BSCollectionViewCellFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSCollectionViewCellFactory.h; sourceTree = "<group>"; };
@@ -102,8 +103,6 @@
 		55E9AFEF1964B6B4000B4699 /* BSTableController+UITableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BSTableController+UITableView.h"; sourceTree = "<group>"; };
 		55E9AFF01964B6B4000B4699 /* BSTableController+UITableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BSTableController+UITableView.m"; sourceTree = "<group>"; };
 		55EC234118F0A321008F5A02 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
-		55EC234318F1DB6A008F5A02 /* BSSpeechBubbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSSpeechBubbleView.h; sourceTree = "<group>"; };
-		55EC234418F1DB6A008F5A02 /* BSSpeechBubbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSSpeechBubbleView.m; sourceTree = "<group>"; };
 		94459BC6DFE9F8F48647AAC7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		AADD7794030C33DAB1DA0972 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB2B9033028BA2F8F9C5F5BA /* BSPhotosController+PrivateMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BSPhotosController+PrivateMethods.h"; sourceTree = "<group>"; };
@@ -312,8 +311,6 @@
 		55EC233A18EF6AEB008F5A02 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				55EC234318F1DB6A008F5A02 /* BSSpeechBubbleView.h */,
-				55EC234418F1DB6A008F5A02 /* BSSpeechBubbleView.m */,
 				557B12EB19ED8C1600C7ED02 /* AlbumCell.swift */,
 				557B12EA19ED8C1600C7ED02 /* BSImagePicker-Bridging-Header.h */,
 				55A79F6819EECFC1003E7E86 /* CameraView.swift */,
@@ -321,6 +318,7 @@
 				55A79F6C19EEE23D003E7E86 /* NumberedSelectionView.swift */,
 				55A79F6E19EEF0EF003E7E86 /* PhotoCell.swift */,
 				55A79F7019EEFB01003E7E86 /* TriangleView.swift */,
+				55066AAC19EF02C900D09790 /* SpeechBubbleView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -477,6 +475,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55066AAD19EF02C900D09790 /* SpeechBubbleView.swift in Sources */,
 				55C3BE7118EF632D00E601DE /* main.m in Sources */,
 				559829841931625B00D68BD5 /* BSImagePickerSettings.m in Sources */,
 				55A4258918FA8E6F00EF7E8F /* BSImagePickerController.m in Sources */,
@@ -491,7 +490,6 @@
 				557BD8FF1962B607007A1C38 /* BSTableController.m in Sources */,
 				5598296E1930ECDF00D68BD5 /* BSAssetsGroupModel.m in Sources */,
 				5509A41C192F9F4D006E4DA1 /* BSAssetModel.m in Sources */,
-				55EC234518F1DB6A008F5A02 /* BSSpeechBubbleView.m in Sources */,
 				BB2B992598FC83C26F7BCF0F /* ALAssetsGroup+Equal.m in Sources */,
 				557B12EC19ED8C1600C7ED02 /* AlbumCell.swift in Sources */,
 				BB2B9B4E9F4BC435FF833E97 /* BSPhotosController.m in Sources */,
