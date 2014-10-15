@@ -15,7 +15,6 @@
 		556AABA5197FCA8000D799F7 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556AABA4197FCA8000D799F7 /* MediaPlayer.framework */; };
 		557B12EC19ED8C1600C7ED02 /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557B12EB19ED8C1600C7ED02 /* AlbumCell.swift */; };
 		557BD8FF1962B607007A1C38 /* BSTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 557BD8FE1962B607007A1C38 /* BSTableController.m */; };
-		558315E918F8436E00B54FE6 /* BSPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 558315E818F8436E00B54FE6 /* BSPhotoCell.m */; };
 		5598296E1930ECDF00D68BD5 /* BSAssetsGroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5598296D1930ECDF00D68BD5 /* BSAssetsGroupModel.m */; };
 		559829841931625B00D68BD5 /* BSImagePickerSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 559829831931625B00D68BD5 /* BSImagePickerSettings.m */; };
 		55A11EE118FC952D00F28CA5 /* UIViewController+BSImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A11EE018FC952D00F28CA5 /* UIViewController+BSImagePicker.m */; };
@@ -24,6 +23,7 @@
 		55A79F6919EECFC1003E7E86 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A79F6819EECFC1003E7E86 /* CameraView.swift */; };
 		55A79F6B19EED3CD003E7E86 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A79F6A19EED3CD003E7E86 /* VideoCell.swift */; };
 		55A79F6D19EEE23D003E7E86 /* NumberedSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A79F6C19EEE23D003E7E86 /* NumberedSelectionView.swift */; };
+		55A79F6F19EEF0EF003E7E86 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A79F6E19EEF0EF003E7E86 /* PhotoCell.swift */; };
 		55C3BE6518EF632D00E601DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C3BE6418EF632D00E601DE /* Foundation.framework */; };
 		55C3BE6718EF632D00E601DE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C3BE6618EF632D00E601DE /* CoreGraphics.framework */; };
 		55C3BE6918EF632D00E601DE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C3BE6818EF632D00E601DE /* UIKit.framework */; };
@@ -68,8 +68,6 @@
 		557B12EB19ED8C1600C7ED02 /* AlbumCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
 		557BD8FD1962B607007A1C38 /* BSTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSTableController.h; sourceTree = "<group>"; };
 		557BD8FE1962B607007A1C38 /* BSTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSTableController.m; sourceTree = "<group>"; };
-		558315E718F8436E00B54FE6 /* BSPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSPhotoCell.h; sourceTree = "<group>"; };
-		558315E818F8436E00B54FE6 /* BSPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSPhotoCell.m; sourceTree = "<group>"; };
 		5598296C1930ECDF00D68BD5 /* BSAssetsGroupModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSAssetsGroupModel.h; sourceTree = "<group>"; };
 		5598296D1930ECDF00D68BD5 /* BSAssetsGroupModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSAssetsGroupModel.m; sourceTree = "<group>"; };
 		559829801931507700D68BD5 /* BSItemsModelDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSItemsModelDelegate.h; sourceTree = "<group>"; };
@@ -84,6 +82,7 @@
 		55A79F6819EECFC1003E7E86 /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		55A79F6A19EED3CD003E7E86 /* VideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 		55A79F6C19EEE23D003E7E86 /* NumberedSelectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberedSelectionView.swift; sourceTree = "<group>"; };
+		55A79F6E19EEF0EF003E7E86 /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		55C3BE6118EF632D00E601DE /* BSImagePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BSImagePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55C3BE6418EF632D00E601DE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		55C3BE6618EF632D00E601DE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -318,13 +317,12 @@
 				55EC234418F1DB6A008F5A02 /* BSSpeechBubbleView.m */,
 				55EC234F18F2F873008F5A02 /* BSTriangleView.h */,
 				55EC235018F2F873008F5A02 /* BSTriangleView.m */,
-				558315E718F8436E00B54FE6 /* BSPhotoCell.h */,
-				558315E818F8436E00B54FE6 /* BSPhotoCell.m */,
 				557B12EB19ED8C1600C7ED02 /* AlbumCell.swift */,
 				557B12EA19ED8C1600C7ED02 /* BSImagePicker-Bridging-Header.h */,
 				55A79F6819EECFC1003E7E86 /* CameraView.swift */,
 				55A79F6A19EED3CD003E7E86 /* VideoCell.swift */,
 				55A79F6C19EEE23D003E7E86 /* NumberedSelectionView.swift */,
+				55A79F6E19EEF0EF003E7E86 /* PhotoCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -489,7 +487,6 @@
 				55A11EE118FC952D00F28CA5 /* UIViewController+BSImagePicker.m in Sources */,
 				55E9AFF11964B6B4000B4699 /* BSTableController+UITableView.m in Sources */,
 				5509A42D193010BC006E4DA1 /* BSPreviewCollectionViewCellFactory.m in Sources */,
-				558315E918F8436E00B54FE6 /* BSPhotoCell.m in Sources */,
 				55A11EE718FE75B300F28CA5 /* ALAsset+BSEqual.m in Sources */,
 				5509A423192FA2FD006E4DA1 /* BSAlbumTableViewCellFactory.m in Sources */,
 				557BD8FF1962B607007A1C38 /* BSTableController.m in Sources */,
@@ -503,6 +500,7 @@
 				BB2B94E7BAF0BCCEEFAB30A3 /* BSCollectionController.m in Sources */,
 				BB2B929FDF16F341870E5B2A /* BSPreviewController.m in Sources */,
 				BB2B93DC4B697E92438D302A /* BSCollectionController+UICollectionView.m in Sources */,
+				55A79F6F19EEF0EF003E7E86 /* PhotoCell.swift in Sources */,
 				BB2B9726523A57B047F419A1 /* BSPhotosController+BSItemsModel.m in Sources */,
 				55A79F6B19EED3CD003E7E86 /* VideoCell.swift in Sources */,
 				BB2B9DCAF191075A0904954F /* BSCollectionController+BSItemsModel.m in Sources */,

@@ -21,7 +21,7 @@
 // SOFTWARE.
 
 #import "BSCollectionController+UICollectionView.h"
-#import "BSPhotoCell.h"
+#import "BSImagePicker-Swift.h"
 #import <AssetsLibrary/AssetsLibrary.h>
 #import "BSImagePickerSettings.h"
 
@@ -38,7 +38,7 @@
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    BSPhotoCell *cell = (BSPhotoCell *)[self.collectionCellFactory cellAtIndexPath:indexPath forCollectionView:collectionView withModel:self.collectionModel];
+    PhotoCell *cell = (PhotoCell *)[self.collectionCellFactory cellAtIndexPath:indexPath forCollectionView:collectionView withModel:self.collectionModel];
 
     if([self.collectionModel isItemAtIndexPathSelected:indexPath]) {
         [collectionView selectItemAtIndexPath:indexPath animated:NO scrollPosition:UICollectionViewScrollPositionNone];
@@ -75,7 +75,7 @@
     //Remove item
     [self.collectionModel deselectItemAtIndexPath:indexPath];
     
-    BSPhotoCell *cell = (BSPhotoCell *)[collectionView cellForItemAtIndexPath:indexPath];
+    PhotoCell *cell = (PhotoCell *)[collectionView cellForItemAtIndexPath:indexPath];
 	[cell setPictureNumber:0 selected:NO animated:YES];
 
     if([[BSImagePickerSettings sharedSetting] toggleBlock]) {
@@ -90,7 +90,7 @@
     //Add item
     [self.collectionModel selectItemAtIndexPath:indexPath];
     
-    BSPhotoCell *cell = (BSPhotoCell *)[collectionView cellForItemAtIndexPath:indexPath];
+    PhotoCell *cell = (PhotoCell *)[collectionView cellForItemAtIndexPath:indexPath];
 	[cell setPictureNumber:[self.collectionModel.selectedItems count] selected:YES animated:YES];
 
     if([[BSImagePickerSettings sharedSetting] toggleBlock]) {

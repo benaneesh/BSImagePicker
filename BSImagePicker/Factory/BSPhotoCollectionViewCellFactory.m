@@ -22,7 +22,7 @@
 
 #import <AssetsLibrary/AssetsLibrary.h>
 #import "BSPhotoCollectionViewCellFactory.h"
-#import "BSPhotoCell.h"
+#import "BSImagePicker-Swift.h"
 #import "BSImagePickerSettings.h"
 #import "BSImagePicker-Swift.h"
 
@@ -32,7 +32,7 @@ static NSString *kVideoCellIdentifier =             @"videoCellIdentifier";
 @implementation BSPhotoCollectionViewCellFactory
 
 + (void)registerCellIdentifiersForCollectionView:(UICollectionView *)aCollectionView {
-    [aCollectionView registerClass:[BSPhotoCell class] forCellWithReuseIdentifier:kPhotoCellIdentifier];
+    [aCollectionView registerClass:[PhotoCell class] forCellWithReuseIdentifier:kPhotoCellIdentifier];
     [aCollectionView registerClass:[VideoCell class] forCellWithReuseIdentifier:kVideoCellIdentifier];
 }
 
@@ -74,7 +74,7 @@ static NSString *kVideoCellIdentifier =             @"videoCellIdentifier";
     ALAsset *asset = [aModel itemAtIndexPath:anIndexPath];
     
     //Deque correct type of cell for the asset
-    BSPhotoCell *photoCell = nil;
+    PhotoCell *photoCell = nil;
     if([[asset valueForProperty:ALAssetPropertyType] isEqual:ALAssetTypeVideo]) {
         photoCell = [aCollectionView dequeueReusableCellWithReuseIdentifier:kVideoCellIdentifier forIndexPath:anIndexPath];
         if([asset valueForProperty:ALAssetPropertyDuration] != ALErrorInvalidProperty) {

@@ -21,7 +21,7 @@
 // SOFTWARE.
 
 #import "BSPreviewCollectionViewCellFactory.h"
-#import "BSPhotoCell.h"
+#import "BSImagePicker-Swift.h"
 #import <AssetsLibrary/AssetsLibrary.h>
 #import "BSImagePicker-Swift.h"
 
@@ -30,7 +30,7 @@ static NSString *kPhotoCellIdentifier =             @"previewCellIdentifier";
 @implementation BSPreviewCollectionViewCellFactory
 
 + (void)registerCellIdentifiersForCollectionView:(UICollectionView *)aCollectionView {
-    [aCollectionView registerClass:[BSPhotoCell class] forCellWithReuseIdentifier:kPhotoCellIdentifier];
+    [aCollectionView registerClass:[PhotoCell class] forCellWithReuseIdentifier:kPhotoCellIdentifier];
 }
 
 + (CGSize)sizeAtIndexPath:(NSIndexPath *)anIndexPath forCollectionView:(UICollectionView *)aCollectionView withModel:(id<BSItemsModel>)aModel {
@@ -53,7 +53,7 @@ static NSString *kPhotoCellIdentifier =             @"previewCellIdentifier";
 }
 
 - (UICollectionViewCell *)cellAtIndexPath:(NSIndexPath *)anIndexPath forCollectionView:(UICollectionView *)aCollectionView withModel:(id<BSItemsModel>)aModel {
-    BSPhotoCell *cell = (BSPhotoCell *)[aCollectionView dequeueReusableCellWithReuseIdentifier:kPhotoCellIdentifier forIndexPath:anIndexPath];
+    PhotoCell *cell = (PhotoCell *)[aCollectionView dequeueReusableCellWithReuseIdentifier:kPhotoCellIdentifier forIndexPath:anIndexPath];
     ALAsset *asset = [aModel itemAtIndexPath:anIndexPath];
     
     if([asset isKindOfClass:[ALAsset class]]) {

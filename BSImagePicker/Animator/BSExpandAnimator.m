@@ -22,7 +22,7 @@
 
 #import "BSExpandAnimator.h"
 #import "BSPhotosController.h"
-#import "BSPhotoCell.h"
+#import "BSImagePicker-Swift.h"
 #import "BSCollectionController+UICollectionView.h"
 #import <UIImageViewModeScaleAspect/UIImageViewModeScaleAspect.h>
 
@@ -43,8 +43,8 @@
     [fromViewController setDisableSelection:YES];
     
     //Get cells
-    BSPhotoCell *fromCell = (BSPhotoCell *)[fromViewController.collectionView cellForItemAtIndexPath:toViewController.currentIndexPath];
-    BSPhotoCell *toCell = (BSPhotoCell *)[toViewController collectionView:toViewController.collectionView cellForItemAtIndexPath:toViewController.currentIndexPath];
+    PhotoCell *fromCell = (PhotoCell *)[fromViewController.collectionView cellForItemAtIndexPath:toViewController.currentIndexPath];
+    PhotoCell *toCell = (PhotoCell *)[toViewController collectionView:toViewController.collectionView cellForItemAtIndexPath:toViewController.currentIndexPath];
     
     //Setup views
     [fromCell.imageView setHidden:YES];

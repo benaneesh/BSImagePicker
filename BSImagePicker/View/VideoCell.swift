@@ -8,7 +8,7 @@
 
 import UIKit
 
-class VideoCell: BSPhotoCell {
+class VideoCell: PhotoCell {
     lazy var durationLabel: UILabel = {
         var lazyView = UILabel(frame: CGRectMake(5.0, 0.0, self.gradientView.bounds.size.width-10.0, 15.0))
         lazyView.textColor = UIColor.whiteColor()
