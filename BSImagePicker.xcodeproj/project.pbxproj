@@ -13,9 +13,11 @@
 		5509A423192FA2FD006E4DA1 /* BSAlbumTableViewCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5509A422192FA2FD006E4DA1 /* BSAlbumTableViewCellFactory.m */; };
 		5509A42919301069006E4DA1 /* BSPhotoCollectionViewCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5509A42819301069006E4DA1 /* BSPhotoCollectionViewCellFactory.m */; };
 		5509A42D193010BC006E4DA1 /* BSPreviewCollectionViewCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5509A42C193010BC006E4DA1 /* BSPreviewCollectionViewCellFactory.m */; };
+		555F41B919EFD98E0013455C /* TableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555F41B819EFD98E0013455C /* TableController.swift */; };
+		555F41BB19EFE2E00013455C /* TableController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555F41BA19EFE2E00013455C /* TableController+UITableView.swift */; };
+		555F41BD19EFE4F80013455C /* TableController+BSItemsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555F41BC19EFE4F80013455C /* TableController+BSItemsModel.swift */; };
 		556AABA5197FCA8000D799F7 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556AABA4197FCA8000D799F7 /* MediaPlayer.framework */; };
 		557B12EC19ED8C1600C7ED02 /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557B12EB19ED8C1600C7ED02 /* AlbumCell.swift */; };
-		557BD8FF1962B607007A1C38 /* BSTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 557BD8FE1962B607007A1C38 /* BSTableController.m */; };
 		5598296E1930ECDF00D68BD5 /* BSAssetsGroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5598296D1930ECDF00D68BD5 /* BSAssetsGroupModel.m */; };
 		559829841931625B00D68BD5 /* BSImagePickerSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 559829831931625B00D68BD5 /* BSImagePickerSettings.m */; };
 		55A11EE118FC952D00F28CA5 /* UIViewController+BSImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A11EE018FC952D00F28CA5 /* UIViewController+BSImagePicker.m */; };
@@ -33,8 +35,6 @@
 		55C3BE7118EF632D00E601DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C3BE7018EF632D00E601DE /* main.m */; };
 		55C3BE7518EF632D00E601DE /* BSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C3BE7418EF632D00E601DE /* BSAppDelegate.m */; };
 		55C3BE7718EF632D00E601DE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55C3BE7618EF632D00E601DE /* Images.xcassets */; };
-		55E9AFEE1964B62A000B4699 /* BSTableController+BSItemsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E9AFED1964B62A000B4699 /* BSTableController+BSItemsModel.m */; };
-		55E9AFF11964B6B4000B4699 /* BSTableController+UITableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E9AFF01964B6B4000B4699 /* BSTableController+UITableView.m */; };
 		BB2B90909814568BB3997E1A /* BSShrinkAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2B99BEDF8860AD297EE80D /* BSShrinkAnimator.m */; };
 		BB2B929FDF16F341870E5B2A /* BSPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2B980BF19D6B2C0E05F297 /* BSPreviewController.m */; };
 		BB2B92A3E94AD0C3BF3D42D4 /* BSPhotosController+UICollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2B98E9E8546E358C4B1234 /* BSPhotosController+UICollectionView.m */; };
@@ -63,12 +63,13 @@
 		5509A42819301069006E4DA1 /* BSPhotoCollectionViewCellFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSPhotoCollectionViewCellFactory.m; sourceTree = "<group>"; };
 		5509A42B193010BC006E4DA1 /* BSPreviewCollectionViewCellFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSPreviewCollectionViewCellFactory.h; sourceTree = "<group>"; };
 		5509A42C193010BC006E4DA1 /* BSPreviewCollectionViewCellFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSPreviewCollectionViewCellFactory.m; sourceTree = "<group>"; };
+		555F41B819EFD98E0013455C /* TableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableController.swift; sourceTree = "<group>"; };
+		555F41BA19EFE2E00013455C /* TableController+UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TableController+UITableView.swift"; sourceTree = "<group>"; };
+		555F41BC19EFE4F80013455C /* TableController+BSItemsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TableController+BSItemsModel.swift"; sourceTree = "<group>"; };
 		556AABA4197FCA8000D799F7 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		556E0CE219017470006F8F73 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
-		557B12EA19ED8C1600C7ED02 /* BSImagePicker-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BSImagePicker-Bridging-Header.h"; sourceTree = "<group>"; };
+		557B12EA19ED8C1600C7ED02 /* BSImagePicker-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "BSImagePicker-Bridging-Header.h"; path = "View/BSImagePicker-Bridging-Header.h"; sourceTree = "<group>"; };
 		557B12EB19ED8C1600C7ED02 /* AlbumCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
-		557BD8FD1962B607007A1C38 /* BSTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSTableController.h; sourceTree = "<group>"; };
-		557BD8FE1962B607007A1C38 /* BSTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSTableController.m; sourceTree = "<group>"; };
 		5598296C1930ECDF00D68BD5 /* BSAssetsGroupModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSAssetsGroupModel.h; sourceTree = "<group>"; };
 		5598296D1930ECDF00D68BD5 /* BSAssetsGroupModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSAssetsGroupModel.m; sourceTree = "<group>"; };
 		559829801931507700D68BD5 /* BSItemsModelDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSItemsModelDelegate.h; sourceTree = "<group>"; };
@@ -98,10 +99,6 @@
 		55C3BE7618EF632D00E601DE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "Supporting Files/Images.xcassets"; sourceTree = "<group>"; };
 		55C3BE7D18EF632D00E601DE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		55CF229018FAD757003784D9 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
-		55E9AFEC1964B62A000B4699 /* BSTableController+BSItemsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BSTableController+BSItemsModel.h"; sourceTree = "<group>"; };
-		55E9AFED1964B62A000B4699 /* BSTableController+BSItemsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BSTableController+BSItemsModel.m"; sourceTree = "<group>"; };
-		55E9AFEF1964B6B4000B4699 /* BSTableController+UITableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BSTableController+UITableView.h"; sourceTree = "<group>"; };
-		55E9AFF01964B6B4000B4699 /* BSTableController+UITableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BSTableController+UITableView.m"; sourceTree = "<group>"; };
 		55EC234118F0A321008F5A02 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		94459BC6DFE9F8F48647AAC7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		AADD7794030C33DAB1DA0972 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -251,6 +248,7 @@
 		55C3BE6B18EF632D00E601DE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				557B12EA19ED8C1600C7ED02 /* BSImagePicker-Bridging-Header.h */,
 				55C3BE7618EF632D00E601DE /* Images.xcassets */,
 				55C3BE6D18EF632D00E601DE /* InfoPlist.strings */,
 			);
@@ -260,10 +258,8 @@
 		55E9AFEB1964B5C7000B4699 /* BSTableController */ = {
 			isa = PBXGroup;
 			children = (
-				55E9AFEC1964B62A000B4699 /* BSTableController+BSItemsModel.h */,
-				55E9AFED1964B62A000B4699 /* BSTableController+BSItemsModel.m */,
-				55E9AFEF1964B6B4000B4699 /* BSTableController+UITableView.h */,
-				55E9AFF01964B6B4000B4699 /* BSTableController+UITableView.m */,
+				555F41BA19EFE2E00013455C /* TableController+UITableView.swift */,
+				555F41BC19EFE4F80013455C /* TableController+BSItemsModel.swift */,
 			);
 			path = BSTableController;
 			sourceTree = "<group>";
@@ -281,8 +277,7 @@
 				BB2B912024F6ABA0C6B81DEF /* BSCollectionController.h */,
 				BB2B980BF19D6B2C0E05F297 /* BSPreviewController.m */,
 				BB2B90F9017BDA73DC835324 /* BSPreviewController.h */,
-				557BD8FD1962B607007A1C38 /* BSTableController.h */,
-				557BD8FE1962B607007A1C38 /* BSTableController.m */,
+				555F41B819EFD98E0013455C /* TableController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -312,7 +307,6 @@
 			isa = PBXGroup;
 			children = (
 				557B12EB19ED8C1600C7ED02 /* AlbumCell.swift */,
-				557B12EA19ED8C1600C7ED02 /* BSImagePicker-Bridging-Header.h */,
 				55A79F6819EECFC1003E7E86 /* CameraView.swift */,
 				55A79F6A19EED3CD003E7E86 /* VideoCell.swift */,
 				55A79F6C19EEE23D003E7E86 /* NumberedSelectionView.swift */,
@@ -481,15 +475,16 @@
 				55A4258918FA8E6F00EF7E8F /* BSImagePickerController.m in Sources */,
 				5509A42919301069006E4DA1 /* BSPhotoCollectionViewCellFactory.m in Sources */,
 				55C3BE7518EF632D00E601DE /* BSAppDelegate.m in Sources */,
+				555F41B919EFD98E0013455C /* TableController.swift in Sources */,
 				55A11EE118FC952D00F28CA5 /* UIViewController+BSImagePicker.m in Sources */,
 				55A79F7119EEFB01003E7E86 /* TriangleView.swift in Sources */,
-				55E9AFF11964B6B4000B4699 /* BSTableController+UITableView.m in Sources */,
 				5509A42D193010BC006E4DA1 /* BSPreviewCollectionViewCellFactory.m in Sources */,
 				55A11EE718FE75B300F28CA5 /* ALAsset+BSEqual.m in Sources */,
 				5509A423192FA2FD006E4DA1 /* BSAlbumTableViewCellFactory.m in Sources */,
-				557BD8FF1962B607007A1C38 /* BSTableController.m in Sources */,
 				5598296E1930ECDF00D68BD5 /* BSAssetsGroupModel.m in Sources */,
 				5509A41C192F9F4D006E4DA1 /* BSAssetModel.m in Sources */,
+				555F41BD19EFE4F80013455C /* TableController+BSItemsModel.swift in Sources */,
+				555F41BB19EFE2E00013455C /* TableController+UITableView.swift in Sources */,
 				BB2B992598FC83C26F7BCF0F /* ALAssetsGroup+Equal.m in Sources */,
 				557B12EC19ED8C1600C7ED02 /* AlbumCell.swift in Sources */,
 				BB2B9B4E9F4BC435FF833E97 /* BSPhotosController.m in Sources */,
@@ -506,7 +501,6 @@
 				BB2B939921EFF103FA6E1864 /* BSPhotosController+PrivateMethods.m in Sources */,
 				BB2B92A3E94AD0C3BF3D42D4 /* BSPhotosController+UICollectionView.m in Sources */,
 				55A79F6D19EEE23D003E7E86 /* NumberedSelectionView.swift in Sources */,
-				55E9AFEE1964B62A000B4699 /* BSTableController+BSItemsModel.m in Sources */,
 				BB2B9A371C251850A91B9B5A /* BSPreviewController+UICollectionView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

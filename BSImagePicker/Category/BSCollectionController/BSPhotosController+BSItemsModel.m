@@ -22,7 +22,6 @@
 
 #import "BSPhotosController+BSItemsModel.h"
 #import "BSCollectionController+BSItemsModel.h"
-#import "BSTableController+BSItemsModel.h"
 #import "BSPhotosController+PrivateMethods.h"
 #import <AssetsLibrary/AssetsLibrary.h>
 

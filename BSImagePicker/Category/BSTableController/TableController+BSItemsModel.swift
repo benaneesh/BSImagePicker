@@ -20,13 +20,10 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-#import "BSItemsModel.h"
-#import "BSTableViewCellFactory.h"
+import Foundation
 
-@interface BSTableController : UIViewController
-
-@property (nonatomic, strong) UITableView *tableView;
-@property (nonatomic, strong) id<BSItemsModel> tableModel;
-@property (nonatomic, strong) id<BSTableViewCellFactory> tableCellFactory;
-
-@end
+extension TableController: BSItemsModelDelegate {
+    func didUpdateModel(aModel: BSItemsModel!) {
+        tableView.reloadData()
+    }
+}

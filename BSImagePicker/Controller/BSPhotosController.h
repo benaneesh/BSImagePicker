@@ -25,12 +25,11 @@
 #import "BSPreviewController.h"
 #import "BSShrinkAnimator.h"
 #import "BSExpandAnimator.h"
-#import "BSTableController.h"
 #import "BSImagePicker-Swift.h"
 
 @interface BSPhotosController : BSCollectionController
 
-@property (nonatomic, strong) BSTableController *tableController;
+@property (nonatomic, strong) TableController *tableController;
 
 @property (nonatomic, strong) SpeechBubbleView *speechBubbleView;
 @property (nonatomic, strong) UIView *coverView;

@@ -108,9 +108,9 @@
 
 #pragma mark - Lazy load
 
-- (BSTableController *)tableController {
+- (TableController *)tableController {
     if(!_tableController) {
-        _tableController = [[BSTableController alloc] init];
+        _tableController = [[TableController alloc] init];
         [_tableController.tableModel setDelegate:self];
     }
     
