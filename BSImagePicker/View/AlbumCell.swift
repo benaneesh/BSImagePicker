@@ -43,15 +43,15 @@ class AlbumCell: UITableViewCell {
         return tempImageView
     }()
     
-    override init?(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
-        imageView?.superview?.addSubview(secondImageView)
-        imageView?.superview?.addSubview(thirdImageView)
-        imageView?.layer.shadowColor = UIColor.whiteColor().CGColor
-        imageView?.layer.shadowRadius = 1.0
-        imageView?.layer.shadowOffset = CGSizeMake(0.5, -0.5)
-        imageView?.layer.shadowOpacity = 1.0
+        imageView.superview?.addSubview(secondImageView)
+        imageView.superview?.addSubview(thirdImageView)
+        imageView.layer.shadowColor = UIColor.whiteColor().CGColor
+        imageView.layer.shadowRadius = 1.0
+        imageView.layer.shadowOffset = CGSizeMake(0.5, -0.5)
+        imageView.layer.shadowOpacity = 1.0
     }
 
     required init(coder aDecoder: NSCoder) {
@@ -61,13 +61,13 @@ class AlbumCell: UITableViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        imageView?.frame = CGRectMake(4.0, 10.0, imageView!.frame.size.width, contentView.frame.size.height-10.0)
-        textLabel?.frame = CGRectOffset(imageView!.frame, imageView!.frame.size.width + 8.0, 0)
+        imageView.frame = CGRectMake(4.0, 10.0, imageView.frame.size.width, contentView.frame.size.height-10.0)
+        textLabel.frame = CGRectOffset(imageView.frame, imageView.frame.size.width + 8.0, 0)
         
-        secondImageView.layer.zPosition = imageView!.layer.zPosition-1
-        thirdImageView.layer.zPosition = imageView!.layer.zPosition-2
+        secondImageView.layer.zPosition = imageView.layer.zPosition-1
+        thirdImageView.layer.zPosition = imageView.layer.zPosition-2
         
-        var previousFrame = imageView!.frame
+        var previousFrame = imageView.frame
         secondImageView.frame = CGRectMake(previousFrame.origin.x+3, previousFrame.origin.y-3, previousFrame.size.width-6, previousFrame.size.height-6)
         previousFrame = secondImageView.frame
         thirdImageView.frame = CGRectMake(previousFrame.origin.x+3, previousFrame.origin.y-3, previousFrame.size.width-6, previousFrame.size.height-6)
