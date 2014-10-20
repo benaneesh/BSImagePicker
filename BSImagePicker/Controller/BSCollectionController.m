@@ -21,7 +21,7 @@
 // SOFTWARE.
 
 #import "BSCollectionController.h"
-#import "BSAssetModel.h"
+#import "BSImagePicker-Swift.h"
 #import "BSPhotoCollectionViewCellFactory.h"
 #import "BSCollectionController+BSItemsModel.h"
 #import "BSCollectionController+UICollectionView.h"
@@ -47,7 +47,7 @@
 
 - (id<BSItemsModel>)collectionModel {
     if(!_collectionModel) {
-        _collectionModel = [[BSAssetModel alloc] init];
+        _collectionModel = [[AssetsModel alloc] init];
         [_collectionModel setDelegate:self];
     }
 
