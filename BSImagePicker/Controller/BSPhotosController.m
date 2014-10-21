@@ -21,7 +21,6 @@
 // SOFTWARE.
 
 #import "BSPhotosController.h"
-#import "BSAssetsGroupModel.h"
 #import "BSAlbumTableViewCellFactory.h"
 #import "BSPhotosController+PrivateMethods.h"
 #import "BSPhotosController+BSItemsModel.h"

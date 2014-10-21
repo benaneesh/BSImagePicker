@@ -37,7 +37,7 @@ class TableController: UIViewController {
     }()
     
     lazy var tableModel: BSItemsModel = {
-        var lazyModel = BSAssetsGroupModel()
+        var lazyModel = AssetsGroupModel()
         lazyModel.setDelegate(self)
         lazyModel.setupWithParentItem(ALAssetsLibrary())
         

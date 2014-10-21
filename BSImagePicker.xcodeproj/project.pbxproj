@@ -12,13 +12,13 @@
 		5509A423192FA2FD006E4DA1 /* BSAlbumTableViewCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5509A422192FA2FD006E4DA1 /* BSAlbumTableViewCellFactory.m */; };
 		5509A42919301069006E4DA1 /* BSPhotoCollectionViewCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5509A42819301069006E4DA1 /* BSPhotoCollectionViewCellFactory.m */; };
 		5509A42D193010BC006E4DA1 /* BSPreviewCollectionViewCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5509A42C193010BC006E4DA1 /* BSPreviewCollectionViewCellFactory.m */; };
+		551553E619F6DCE400B3B2D0 /* AssetsGroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551553E519F6DCE400B3B2D0 /* AssetsGroupModel.swift */; };
 		555F41B919EFD98E0013455C /* TableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555F41B819EFD98E0013455C /* TableController.swift */; };
 		555F41BB19EFE2E00013455C /* TableController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555F41BA19EFE2E00013455C /* TableController+UITableView.swift */; };
 		555F41BD19EFE4F80013455C /* TableController+BSItemsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555F41BC19EFE4F80013455C /* TableController+BSItemsModel.swift */; };
 		556AABA5197FCA8000D799F7 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556AABA4197FCA8000D799F7 /* MediaPlayer.framework */; };
 		5579CAB919F580B600E92B0E /* AssetsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5579CAB819F580B600E92B0E /* AssetsModel.swift */; };
 		557B12EC19ED8C1600C7ED02 /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557B12EB19ED8C1600C7ED02 /* AlbumCell.swift */; };
-		5598296E1930ECDF00D68BD5 /* BSAssetsGroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5598296D1930ECDF00D68BD5 /* BSAssetsGroupModel.m */; };
 		559829841931625B00D68BD5 /* BSImagePickerSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 559829831931625B00D68BD5 /* BSImagePickerSettings.m */; };
 		55A11EE118FC952D00F28CA5 /* UIViewController+BSImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A11EE018FC952D00F28CA5 /* UIViewController+BSImagePicker.m */; };
 		55A11EE718FE75B300F28CA5 /* ALAsset+BSEqual.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A11EE618FE75B300F28CA5 /* ALAsset+BSEqual.m */; };
@@ -61,6 +61,7 @@
 		5509A42819301069006E4DA1 /* BSPhotoCollectionViewCellFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSPhotoCollectionViewCellFactory.m; sourceTree = "<group>"; };
 		5509A42B193010BC006E4DA1 /* BSPreviewCollectionViewCellFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSPreviewCollectionViewCellFactory.h; sourceTree = "<group>"; };
 		5509A42C193010BC006E4DA1 /* BSPreviewCollectionViewCellFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSPreviewCollectionViewCellFactory.m; sourceTree = "<group>"; };
+		551553E519F6DCE400B3B2D0 /* AssetsGroupModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetsGroupModel.swift; sourceTree = "<group>"; };
 		555F41B819EFD98E0013455C /* TableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableController.swift; sourceTree = "<group>"; };
 		555F41BA19EFE2E00013455C /* TableController+UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TableController+UITableView.swift"; sourceTree = "<group>"; };
 		555F41BC19EFE4F80013455C /* TableController+BSItemsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TableController+BSItemsModel.swift"; sourceTree = "<group>"; };
@@ -69,8 +70,6 @@
 		5579CAB819F580B600E92B0E /* AssetsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetsModel.swift; sourceTree = "<group>"; };
 		557B12EA19ED8C1600C7ED02 /* BSImagePicker-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "BSImagePicker-Bridging-Header.h"; path = "View/BSImagePicker-Bridging-Header.h"; sourceTree = "<group>"; };
 		557B12EB19ED8C1600C7ED02 /* AlbumCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
-		5598296C1930ECDF00D68BD5 /* BSAssetsGroupModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSAssetsGroupModel.h; sourceTree = "<group>"; };
-		5598296D1930ECDF00D68BD5 /* BSAssetsGroupModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSAssetsGroupModel.m; sourceTree = "<group>"; };
 		559829801931507700D68BD5 /* BSItemsModelDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSItemsModelDelegate.h; sourceTree = "<group>"; };
 		559829821931625B00D68BD5 /* BSImagePickerSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSImagePickerSettings.h; sourceTree = "<group>"; };
 		559829831931625B00D68BD5 /* BSImagePickerSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSImagePickerSettings.m; sourceTree = "<group>"; };
@@ -294,9 +293,8 @@
 		55EC233918EF6AEB008F5A02 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				5598296C1930ECDF00D68BD5 /* BSAssetsGroupModel.h */,
-				5598296D1930ECDF00D68BD5 /* BSAssetsGroupModel.m */,
 				5579CAB819F580B600E92B0E /* AssetsModel.swift */,
+				551553E519F6DCE400B3B2D0 /* AssetsGroupModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -480,7 +478,7 @@
 				5509A42D193010BC006E4DA1 /* BSPreviewCollectionViewCellFactory.m in Sources */,
 				55A11EE718FE75B300F28CA5 /* ALAsset+BSEqual.m in Sources */,
 				5509A423192FA2FD006E4DA1 /* BSAlbumTableViewCellFactory.m in Sources */,
-				5598296E1930ECDF00D68BD5 /* BSAssetsGroupModel.m in Sources */,
+				551553E619F6DCE400B3B2D0 /* AssetsGroupModel.swift in Sources */,
 				555F41BD19EFE4F80013455C /* TableController+BSItemsModel.swift in Sources */,
 				555F41BB19EFE2E00013455C /* TableController+UITableView.swift in Sources */,
 				BB2B992598FC83C26F7BCF0F /* ALAssetsGroup+Equal.m in Sources */,

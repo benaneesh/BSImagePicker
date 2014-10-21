@@ -4,7 +4,6 @@
 
 #import "BSItemsModel.h"
 #import "BSTableViewCellFactory.h"
-#import "BSAssetsGroupModel.h"
 #import <AssetsLibrary/AssetsLibrary.h>
 #import "BSAlbumTableViewCellFactory.h"
 #import "BSItemsModelDelegate.h"
