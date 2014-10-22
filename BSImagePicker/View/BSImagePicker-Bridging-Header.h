@@ -5,6 +5,6 @@
 #import "BSItemsModel.h"
 #import "BSTableViewCellFactory.h"
 #import <AssetsLibrary/AssetsLibrary.h>
-#import "BSAlbumTableViewCellFactory.h"
 #import "BSItemsModelDelegate.h"
 #import "BSImagePickerSettings.h"
+#import "BSTableViewCellFactory.h"

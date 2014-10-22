@@ -45,7 +45,7 @@ extension TableController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return BSAlbumTableViewCellFactory.heightAtIndexPath(indexPath, forModel: tableModel)
+        return AlbumTableViewCellFactory.heightAtIndexPath(indexPath, forModel: tableModel)
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {

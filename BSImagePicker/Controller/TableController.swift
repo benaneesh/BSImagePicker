@@ -45,7 +45,7 @@ class TableController: UIViewController {
     }()
     
     lazy var tableCellFactory: BSTableViewCellFactory = {
-        var lazyFactory = BSAlbumTableViewCellFactory()
+        var lazyFactory = AlbumTableViewCellFactory()
         
         return lazyFactory
     }()
@@ -53,7 +53,7 @@ class TableController: UIViewController {
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         
-        BSAlbumTableViewCellFactory.registerCellIdentifiersForTableView(tableView)
+        AlbumTableViewCellFactory.registerCellIdentifiersForTableView(tableView)
     }
 
     required init(coder aDecoder: NSCoder) {
