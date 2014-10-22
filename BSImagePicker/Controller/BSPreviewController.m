@@ -21,7 +21,6 @@
 // SOFTWARE.
 
 #import "BSPreviewController.h"
-#import "BSPreviewCollectionViewCellFactory.h"
 #import <AssetsLibrary/AssetsLibrary.h>
 #import <MediaPlayer/MediaPlayer.h>
 #import "BSImagePicker-Swift.h"
@@ -61,7 +60,7 @@
         [self.collectionView setAlwaysBounceHorizontal:YES];
 
         //Setup factory
-        [self setCollectionCellFactory:[[BSPreviewCollectionViewCellFactory alloc] init]];
+        [self setCollectionCellFactory:[[PreviewCollectionViewCellFactory alloc] init]];
 
         //Register identifiers
         [[self.collectionCellFactory class] registerCellIdentifiersForCollectionView:self.collectionView];

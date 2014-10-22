@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		0879977EF00D2E2F8578B0B0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AADD7794030C33DAB1DA0972 /* libPods.a */; };
 		55066AAD19EF02C900D09790 /* SpeechBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55066AAC19EF02C900D09790 /* SpeechBubbleView.swift */; };
-		5509A42D193010BC006E4DA1 /* BSPreviewCollectionViewCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5509A42C193010BC006E4DA1 /* BSPreviewCollectionViewCellFactory.m */; };
 		551553E619F6DCE400B3B2D0 /* AssetsGroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551553E519F6DCE400B3B2D0 /* AssetsGroupModel.swift */; };
 		551553E819F7116B00B3B2D0 /* AlbumTableViewCellFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551553E719F7116B00B3B2D0 /* AlbumTableViewCellFactory.swift */; };
 		551553EA19F7CC7200B3B2D0 /* PhotoCollectionViewCellFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551553E919F7CC7200B3B2D0 /* PhotoCollectionViewCellFactory.swift */; };
+		551553EC19F7D37E00B3B2D0 /* PreviewCollectionViewCellFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551553EB19F7D37E00B3B2D0 /* PreviewCollectionViewCellFactory.swift */; };
 		555F41B919EFD98E0013455C /* TableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555F41B819EFD98E0013455C /* TableController.swift */; };
 		555F41BB19EFE2E00013455C /* TableController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555F41BA19EFE2E00013455C /* TableController+UITableView.swift */; };
 		555F41BD19EFE4F80013455C /* TableController+BSItemsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555F41BC19EFE4F80013455C /* TableController+BSItemsModel.swift */; };
@@ -55,11 +55,10 @@
 		5509A411192F9B08006E4DA1 /* BSItemsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSItemsModel.h; sourceTree = "<group>"; };
 		5509A412192F9B27006E4DA1 /* BSTableViewCellFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSTableViewCellFactory.h; sourceTree = "<group>"; };
 		5509A413192F9C18006E4DA1 /* BSCollectionViewCellFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSCollectionViewCellFactory.h; sourceTree = "<group>"; };
-		5509A42B193010BC006E4DA1 /* BSPreviewCollectionViewCellFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSPreviewCollectionViewCellFactory.h; sourceTree = "<group>"; };
-		5509A42C193010BC006E4DA1 /* BSPreviewCollectionViewCellFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSPreviewCollectionViewCellFactory.m; sourceTree = "<group>"; };
 		551553E519F6DCE400B3B2D0 /* AssetsGroupModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetsGroupModel.swift; sourceTree = "<group>"; };
 		551553E719F7116B00B3B2D0 /* AlbumTableViewCellFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumTableViewCellFactory.swift; sourceTree = "<group>"; };
 		551553E919F7CC7200B3B2D0 /* PhotoCollectionViewCellFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCellFactory.swift; sourceTree = "<group>"; };
+		551553EB19F7D37E00B3B2D0 /* PreviewCollectionViewCellFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewCollectionViewCellFactory.swift; sourceTree = "<group>"; };
 		555F41B819EFD98E0013455C /* TableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableController.swift; sourceTree = "<group>"; };
 		555F41BA19EFE2E00013455C /* TableController+UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TableController+UITableView.swift"; sourceTree = "<group>"; };
 		555F41BC19EFE4F80013455C /* TableController+BSItemsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TableController+BSItemsModel.swift"; sourceTree = "<group>"; };
@@ -154,10 +153,9 @@
 		5509A420192FA2D8006E4DA1 /* Factory */ = {
 			isa = PBXGroup;
 			children = (
-				5509A42B193010BC006E4DA1 /* BSPreviewCollectionViewCellFactory.h */,
-				5509A42C193010BC006E4DA1 /* BSPreviewCollectionViewCellFactory.m */,
 				551553E719F7116B00B3B2D0 /* AlbumTableViewCellFactory.swift */,
 				551553E919F7CC7200B3B2D0 /* PhotoCollectionViewCellFactory.swift */,
+				551553EB19F7D37E00B3B2D0 /* PreviewCollectionViewCellFactory.swift */,
 			);
 			path = Factory;
 			sourceTree = "<group>";
@@ -467,10 +465,10 @@
 				55A4258918FA8E6F00EF7E8F /* BSImagePickerController.m in Sources */,
 				55C3BE7518EF632D00E601DE /* BSAppDelegate.m in Sources */,
 				555F41B919EFD98E0013455C /* TableController.swift in Sources */,
+				551553EC19F7D37E00B3B2D0 /* PreviewCollectionViewCellFactory.swift in Sources */,
 				55A11EE118FC952D00F28CA5 /* UIViewController+BSImagePicker.m in Sources */,
 				5579CAB919F580B600E92B0E /* AssetsModel.swift in Sources */,
 				55A79F7119EEFB01003E7E86 /* TriangleView.swift in Sources */,
-				5509A42D193010BC006E4DA1 /* BSPreviewCollectionViewCellFactory.m in Sources */,
 				55A11EE718FE75B300F28CA5 /* ALAsset+BSEqual.m in Sources */,
 				551553E619F6DCE400B3B2D0 /* AssetsGroupModel.swift in Sources */,
 				555F41BD19EFE4F80013455C /* TableController+BSItemsModel.swift in Sources */,
