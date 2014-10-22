@@ -22,7 +22,6 @@
 
 #import "BSCollectionController.h"
 #import "BSImagePicker-Swift.h"
-#import "BSPhotoCollectionViewCellFactory.h"
 #import "BSCollectionController+BSItemsModel.h"
 #import "BSCollectionController+UICollectionView.h"
 
@@ -76,7 +75,7 @@
 
 - (id<BSCollectionViewCellFactory>)collectionCellFactory {
     if(!_collectionCellFactory) {
-        _collectionCellFactory = [[BSPhotoCollectionViewCellFactory alloc] init];
+        _collectionCellFactory = [[PhotoCollectionViewCellFactory alloc] init];
     }
 
     return _collectionCellFactory;

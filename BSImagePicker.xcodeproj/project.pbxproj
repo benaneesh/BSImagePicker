@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		0879977EF00D2E2F8578B0B0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AADD7794030C33DAB1DA0972 /* libPods.a */; };
 		55066AAD19EF02C900D09790 /* SpeechBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55066AAC19EF02C900D09790 /* SpeechBubbleView.swift */; };
-		5509A42919301069006E4DA1 /* BSPhotoCollectionViewCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5509A42819301069006E4DA1 /* BSPhotoCollectionViewCellFactory.m */; };
 		5509A42D193010BC006E4DA1 /* BSPreviewCollectionViewCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5509A42C193010BC006E4DA1 /* BSPreviewCollectionViewCellFactory.m */; };
 		551553E619F6DCE400B3B2D0 /* AssetsGroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551553E519F6DCE400B3B2D0 /* AssetsGroupModel.swift */; };
 		551553E819F7116B00B3B2D0 /* AlbumTableViewCellFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551553E719F7116B00B3B2D0 /* AlbumTableViewCellFactory.swift */; };
+		551553EA19F7CC7200B3B2D0 /* PhotoCollectionViewCellFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551553E919F7CC7200B3B2D0 /* PhotoCollectionViewCellFactory.swift */; };
 		555F41B919EFD98E0013455C /* TableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555F41B819EFD98E0013455C /* TableController.swift */; };
 		555F41BB19EFE2E00013455C /* TableController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555F41BA19EFE2E00013455C /* TableController+UITableView.swift */; };
 		555F41BD19EFE4F80013455C /* TableController+BSItemsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555F41BC19EFE4F80013455C /* TableController+BSItemsModel.swift */; };
@@ -55,12 +55,11 @@
 		5509A411192F9B08006E4DA1 /* BSItemsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSItemsModel.h; sourceTree = "<group>"; };
 		5509A412192F9B27006E4DA1 /* BSTableViewCellFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSTableViewCellFactory.h; sourceTree = "<group>"; };
 		5509A413192F9C18006E4DA1 /* BSCollectionViewCellFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSCollectionViewCellFactory.h; sourceTree = "<group>"; };
-		5509A42719301069006E4DA1 /* BSPhotoCollectionViewCellFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSPhotoCollectionViewCellFactory.h; sourceTree = "<group>"; };
-		5509A42819301069006E4DA1 /* BSPhotoCollectionViewCellFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSPhotoCollectionViewCellFactory.m; sourceTree = "<group>"; };
 		5509A42B193010BC006E4DA1 /* BSPreviewCollectionViewCellFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSPreviewCollectionViewCellFactory.h; sourceTree = "<group>"; };
 		5509A42C193010BC006E4DA1 /* BSPreviewCollectionViewCellFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSPreviewCollectionViewCellFactory.m; sourceTree = "<group>"; };
 		551553E519F6DCE400B3B2D0 /* AssetsGroupModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetsGroupModel.swift; sourceTree = "<group>"; };
 		551553E719F7116B00B3B2D0 /* AlbumTableViewCellFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumTableViewCellFactory.swift; sourceTree = "<group>"; };
+		551553E919F7CC7200B3B2D0 /* PhotoCollectionViewCellFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCellFactory.swift; sourceTree = "<group>"; };
 		555F41B819EFD98E0013455C /* TableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableController.swift; sourceTree = "<group>"; };
 		555F41BA19EFE2E00013455C /* TableController+UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TableController+UITableView.swift"; sourceTree = "<group>"; };
 		555F41BC19EFE4F80013455C /* TableController+BSItemsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TableController+BSItemsModel.swift"; sourceTree = "<group>"; };
@@ -155,11 +154,10 @@
 		5509A420192FA2D8006E4DA1 /* Factory */ = {
 			isa = PBXGroup;
 			children = (
-				5509A42719301069006E4DA1 /* BSPhotoCollectionViewCellFactory.h */,
-				5509A42819301069006E4DA1 /* BSPhotoCollectionViewCellFactory.m */,
 				5509A42B193010BC006E4DA1 /* BSPreviewCollectionViewCellFactory.h */,
 				5509A42C193010BC006E4DA1 /* BSPreviewCollectionViewCellFactory.m */,
 				551553E719F7116B00B3B2D0 /* AlbumTableViewCellFactory.swift */,
+				551553E919F7CC7200B3B2D0 /* PhotoCollectionViewCellFactory.swift */,
 			);
 			path = Factory;
 			sourceTree = "<group>";
@@ -467,7 +465,6 @@
 				55C3BE7118EF632D00E601DE /* main.m in Sources */,
 				559829841931625B00D68BD5 /* BSImagePickerSettings.m in Sources */,
 				55A4258918FA8E6F00EF7E8F /* BSImagePickerController.m in Sources */,
-				5509A42919301069006E4DA1 /* BSPhotoCollectionViewCellFactory.m in Sources */,
 				55C3BE7518EF632D00E601DE /* BSAppDelegate.m in Sources */,
 				555F41B919EFD98E0013455C /* TableController.swift in Sources */,
 				55A11EE118FC952D00F28CA5 /* UIViewController+BSImagePicker.m in Sources */,
@@ -493,6 +490,7 @@
 				551553E819F7116B00B3B2D0 /* AlbumTableViewCellFactory.swift in Sources */,
 				55A79F6919EECFC1003E7E86 /* CameraView.swift in Sources */,
 				BB2B939921EFF103FA6E1864 /* BSPhotosController+PrivateMethods.m in Sources */,
+				551553EA19F7CC7200B3B2D0 /* PhotoCollectionViewCellFactory.swift in Sources */,
 				BB2B92A3E94AD0C3BF3D42D4 /* BSPhotosController+UICollectionView.m in Sources */,
 				55A79F6D19EEE23D003E7E86 /* NumberedSelectionView.swift in Sources */,
 				BB2B9A371C251850A91B9B5A /* BSPreviewController+UICollectionView.m in Sources */,

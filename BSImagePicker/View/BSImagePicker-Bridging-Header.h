@@ -8,3 +8,4 @@
 #import "BSItemsModelDelegate.h"
 #import "BSImagePickerSettings.h"
 #import "BSTableViewCellFactory.h"
+#import "BSCollectionViewCellFactory.h"
